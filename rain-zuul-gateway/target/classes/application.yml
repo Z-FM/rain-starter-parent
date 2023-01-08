@@ -1,0 +1,42 @@
+
+server:
+  port: 81
+
+#eureka注册中心首页的Application这一栏
+spring:
+  application:
+    name: eureka-gateway
+  #网关路由配置
+  cloud:
+    gateway:
+      #开启网关，默认开启
+      enabled: true
+      #节点 routes 是一个List 对象，其中 routes 集合中中又包含多个对象，每个对象有三个属性（一个 索引[0]代表一个对象）
+      routes:
+        #路由 id,没有固定规则，但唯一
+        - id: script-adaptor
+          #匹配后提供服务的路由地址；uri统一资源定位符   url 统一资源标识符
+          uri: http://localhost:8080
+          #以下是断言条件，必选全部符合条件；断言是给某一个路由来设定的一种匹配规则 默认不能作用在动态路由上
+          predicates:
+            #断言，路径匹配，只要Path匹配上了/doLogin 就往 uri 转发 并且将路径带上 注意：Path 中 P 为大写
+            #也可以全局匹配，如 /service/**
+            - Path=/script
+            #只能是 GET,POST 请求时，才能访问
+            - Method=GET,POST
+
+eureka:
+  instance:
+    #每间隔5s，向Eureka服务注册中心发送一次心跳，证明服务是否依然“存活”
+    lease-renewal-interval-in-seconds: 2
+    #告诉服务端，如果10s之内没有发送心跳，就代表故障，将本服务踢出
+    lease-expiration-duration-in-seconds: 10
+    #告诉服务端，服务实例以IP作为链接，不是取机器名
+    prefer-ip-address: false
+    #注册服务实例ID,，服务ID必须唯一 springcloud-7-service-eureka-gateway
+    instance-id: ${spring.application.name}:${server.port}
+  #注册中心的链接地址  http://eureka8761:8761/eureka,http://eureka8762:8762/eureka,http://eureka8763:8763/eureka
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.rain.AppTest" time="0.017" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\ideaproject\rain-starter-parent\rain-boot-adaptor\target\test-classes;E:\ideaproject\rain-starter-parent\rain-boot-adaptor\target\classes;E:\java\maven\apache-maven-3.8.4\repository\junit\junit\4.11\junit-4.11.jar;E:\java\maven\apache-maven-3.8.4\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;E:\java\maven\apache-maven-3.8.4\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="E:\java\jdk1.8.0_102\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire5919900841094381405\surefirebooter2896051298771112580.jar C:\Users\Administrator\AppData\Local\Temp\surefire5919900841094381405 2023-01-07T21-24-16_732-jvmRun1 surefire2279773370812980978tmp surefire_0811935613625490471tmp"/>
+    <property name="surefire.test.class.path" value="E:\ideaproject\rain-starter-parent\rain-boot-adaptor\target\test-classes;E:\ideaproject\rain-starter-parent\rain-boot-adaptor\target\classes;E:\java\maven\apache-maven-3.8.4\repository\junit\junit\4.11\junit-4.11.jar;E:\java\maven\apache-maven-3.8.4\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;E:\java\maven\apache-maven-3.8.4\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="E:\java\jdk1.8.0_102\jre"/>
+    <property name="basedir" value="E:\ideaproject\rain-starter-parent\rain-boot-adaptor"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire5919900841094381405\surefirebooter2896051298771112580.jar"/>
+    <property name="sun.boot.class.path" value="E:\java\jdk1.8.0_102\jre\lib\resources.jar;E:\java\jdk1.8.0_102\jre\lib\rt.jar;E:\java\jdk1.8.0_102\jre\lib\sunrsasign.jar;E:\java\jdk1.8.0_102\jre\lib\jsse.jar;E:\java\jdk1.8.0_102\jre\lib\jce.jar;E:\java\jdk1.8.0_102\jre\lib\charsets.jar;E:\java\jdk1.8.0_102\jre\lib\jfr.jar;E:\java\jdk1.8.0_102\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_102-b14"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="E:\java\jdk1.8.0_102\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\java\maven\apache-maven-3.8.4\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.3"/>
+    <property name="java.version" value="1.8.0_102"/>
+    <property name="user.dir" value="E:\ideaproject\rain-starter-parent\rain-boot-adaptor"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="E:\java\jdk1.8.0_102\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;E:\java\jdk1.8.0_102\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\Git\cmd;E:\java\jdk1.8.0_102\jre\bin;E:\java\maven\apache-maven-3.8.4\bin;E:\java\gradle\gradle-6.6\bin;E:\mysql\mysql-5.7.15-winx64\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Badnizip\;D:\Program Files\JetBrains\IntelliJ IDEA 2021.3\bin;;;D:\Program Files\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.102-b14"/>
+    <property name="java.ext.dirs" value="E:\java\jdk1.8.0_102\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="org.rain.AppTest" time="0"/>
+</testsuite>
