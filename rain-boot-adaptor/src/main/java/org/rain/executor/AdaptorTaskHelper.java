@@ -1,5 +1,7 @@
 package org.rain.executor;
 
+import org.rain.database.exception.TaskNotExistException;
+import org.rain.domain.entity.ScriptExecute;
 import org.rain.domain.result.TaskResultBox;
 
 import java.util.Objects;
@@ -12,13 +14,12 @@ import java.util.Objects;
  */
 public class AdaptorTaskHelper {
 
-    public static TaskResultBox executeAdaptorTask(String taskCode, String tenantNum, Object inputObj) throws TaskNotExistException {
-        //任务获取,完全依赖服务端推到Redis
-        AdaptorTask adaptorTask = AdaptorHelperBridge.getAdaptorTask(taskCode, tenantNum);
+    public static TaskResultBox executeAdaptorTask(String taskCode, Long tenantId, Object inputObj) throws TaskNotExistException {
+        ScriptExecute adaptorTask = AdaptorHelperBridge.getAdaptorTask(taskCode, tenantId);
         if (Objects.isNull(adaptorTask)) {
             throw new TaskNotExistException();
         }
-        return AdaptorHelperBridge.innerExecuteAdaptorTask(taskCode, tenantNum, inputObj, adaptorTask, true);
+        return AdaptorHelperBridge.innerExecuteAdaptorTask(taskCode, tenantId, inputObj, adaptorTask, true);
     }
 
 }
