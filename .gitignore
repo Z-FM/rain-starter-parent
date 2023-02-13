@@ -1,0 +1,50 @@
+# maven ignore
+target/
+bin/
+*.versionsBackup
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+.factorypath
+
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+/temp
+/tmp
+app.jar
+
+#z5
+.z5n
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+gitlabci/.generated
+
+# vs code
+.vscode/
+
+# sonar
+.sonarlint/
+
+#spuc
+src/main/resources/application-dev.yml
+init-local*
+
+
+
+/.z5n
